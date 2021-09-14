@@ -24,7 +24,7 @@ export default compact([
       },
       expanded: 'none',
       basePath: '/api/',
-      pathPrefixSize: 3,
+      pathPrefixSize: 2,
       pathReplacements: [],
       documentationPage: NODE_ENV === 'development',
       documentationPath: '/explorer'
