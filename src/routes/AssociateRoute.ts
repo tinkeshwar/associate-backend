@@ -46,12 +46,13 @@ export default [
         payload: {
           name: Joi.string().required().example('John'),
           phone: Joi.number().required().example('9876543210'),
-          address: Joi.string().optional().allow(null).empty('')
+          address: Joi.string().optional().allow(null).empty(''),
+          specializations: Joi.array().single().required().example(['1'])
         }
       },
       response: {
         status: {
-          200: AssociateResponseSchema,
+          // 200: AssociateResponseSchema,
           400: BadRequestErrorSchema,
           500: InternalServerErrorSchema
         }
@@ -97,7 +98,8 @@ export default [
         payload: {
           name: Joi.string().required().example('John'),
           phone: Joi.number().required().example('9876543210'),
-          address: Joi.string().optional().allow(null).empty('')
+          address: Joi.string().optional().allow(null).empty(''),
+          specializations: Joi.array().single().required().example(['1'])
         }
       },
       response: {
