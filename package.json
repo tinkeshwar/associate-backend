@@ -18,6 +18,7 @@
     "node-cleanup": "^2.1.2",
     "sequelize": "^6.6.5",
     "snakecase-keys": "^4.0.2",
+    "sqlite3": "^5.0.2",
     "winston": "^3.3.3"
   },
   "devDependencies": {
